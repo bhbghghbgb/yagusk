@@ -1,0 +1,25 @@
+@startuml vcb extractor
+hide empty description
+[*] --> Idle: Page header
+State Row {
+    Idle --> Date: First row
+    Date --> ID
+    ID --> Debit
+    ID --> Credit
+    Debit --> Balance
+    Credit --> Balance
+    Debit --> Comment
+    Credit --> Comment
+    Balance --> Comment
+    Comment --> Comment: One more line
+    Comment --> Date: Next row
+}
+Comment --> [*]: Page footer
+state "onErrorSkip(choice)" as onErrorChoice <<sdlreceive>>
+state skipChoice <<choice>>
+onErrorChoice --> skipChoice
+Row -[#red,dashed]-> onErrorChoice: Failed
+skipChoice --> Idle: [choice="row"]
+skipChoice --> [*]: [choice="page"]
+Idle --> [*]: Page footer
+@enduml
