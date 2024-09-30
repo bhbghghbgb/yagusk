@@ -29,6 +29,7 @@ class VcbStatementExtractor {
         this.completed = false;
 
         this._eTypeMappings = [
+            { type: "filler", fn: this._eIsFiller },
             { type: "tnxDate", fn: this._eAsTnxDate },
             { type: "docNo", fn: this._eAsDocNo },
             { type: "debit", fn: this._eAsDebit },
@@ -36,6 +37,40 @@ class VcbStatementExtractor {
             { type: "balance", fn: this._eAsBalance },
             { type: "transactionsInDetail", fn: this._eAsTransactionsInDetail },
         ];
+
+        this.fsm = StateMachine({
+            init: "start",
+            transitions: [
+                { name: "headerFound", from: "start", to: "idle" },
+                { name: "newRow", from: ["idle", "comment"], to: "date" },
+                { name: "parseId", from: "date", to: "id" },
+                { name: "parseDebit", from: "id", to: "debit" },
+                { name: "parseCredit", from: "id", to: "credit" },
+                {
+                    name: "parseBalance",
+                    from: ["debit", "credit"],
+                    to: "balance",
+                },
+                {
+                    name: "parseComment",
+                    from: ["debit", "credit", "balance", "comment"],
+                    to: "comment",
+                },
+                { name: "footerFound", from: ["idle", "comment"], to: "end" },
+                {
+                    name: "fail",
+                    from: [
+                        "date",
+                        "id",
+                        "debit",
+                        "credit",
+                        "balance",
+                        "comment",
+                    ],
+                    to: "idle",
+                },
+            ],
+        });
     }
     extract() {}
     // advance cursor
@@ -44,8 +79,8 @@ class VcbStatementExtractor {
             this.completed = true;
             return false;
         }
-        this.currentElementText = undefined;
         this.currentElement = undefined;
+        this.currentElementText = undefined;
         this.currentElementType = undefined;
         this.currentElementValue = undefined;
         this.currentElement = this.elements[this.currentElementPos++];
@@ -62,15 +97,20 @@ class VcbStatementExtractor {
                 return;
             }
         }
-        this.current;
+        this.currentElementType = null;
+        this.currentElementValue = null;
     }
-    // go to next element with specific types
+    // move cursor to next element with specific types, returns found type
     _eToNext(types) {
-        if (!this._toNextElement()) {
-            return false;
-        }
-        this._eDetermine();
-        if (!types.includes(this.currentElementValue)) {
+        while (true) {
+            if (!this._toNextElement()) {
+                return null;
+            }
+            this._eDetermine();
+            if (!types.includes(this.currentElementType)) {
+                continue;
+            }
+            return this.currentElementType;
         }
     }
     // text is in date format DD/MM/YYYY

@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PDF Text Extraction</title>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.6.82/pdf.min.mjs"
-      type="module"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.6.82/pdf.worker.min.mjs"
-      type="module"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.5.141/pdf_viewer.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/dayjs.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/plugin/customParseFormat.min.js"></script>
-    <script>dayjs.extend(window.dayjs_plugin_customParseFormat)</script>
-  </head>
+    <head>
+        <title>PDF Text Extraction</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.6.82/pdf.min.mjs"
+            type="module"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.6.82/pdf.worker.min.mjs"
+            type="module"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.5.141/pdf_viewer.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/dayjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/plugin/customParseFormat.min.js"></script>
+        <script>
+            dayjs.extend(window.dayjs_plugin_customParseFormat);
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript-state-machine/3.1.0/state-machine.min.js"></script>
+    </head>
 
-  <body>
-    <input type="file" id="pdfFile" accept=".pdf" />
-    <div
-      id="htmlCodeBox"
-      style="height: 200px; background-color: darkgray; overflow-y: scroll"
-    ></div>
-    <button id="extractButton">Extract Text</button>
-    <button id="copyButton">Copy Code</button>
-    <div id="filenameContainer"></div>
-    <div id="currentPageContainer">Current page: N/A</div>
-    <div id="pageNavigation">
-      <button id="prevPageButton">Previous Page</button>
-      <button id="nextPageButton">Next Page</button>
-    </div>
-    <div id="pdfContainer" style="position: relative">
-      <canvas id="pdfCanvas"></canvas>
-      <div id="textLayer" class="textLayer"></div>
-    </div>
-    <script src="script.js" type="module"></script>
-  </body>
+    <body>
+        <input type="file" id="pdfFile" accept=".pdf" />
+        <div
+            id="htmlCodeBox"
+            style="
+                height: 200px;
+                background-color: darkgray;
+                overflow-y: scroll;
+            "
+        ></div>
+        <button id="extractButton">Extract Text</button>
+        <button id="copyButton">Copy Code</button>
+        <div id="filenameContainer"></div>
+        <div id="currentPageContainer">Current page: N/A</div>
+        <div id="pageNavigation">
+            <button id="prevPageButton">Previous Page</button>
+            <button id="nextPageButton">Next Page</button>
+        </div>
+        <div id="pdfContainer" style="position: relative">
+            <canvas id="pdfCanvas"></canvas>
+            <div id="textLayer" class="textLayer"></div>
+        </div>
+        <script src="script.js" type="module"></script>
+    </body>
 </html>
