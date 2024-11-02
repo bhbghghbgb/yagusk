@@ -1,0 +1,116 @@
+Nam thường đến trường.
+Lan thường đến thư viện.
+Lan thường đến trường.
+Lan thường đến nhà.
+Nam thường đến nhà.
+Nam đến nhà.
+Lan đến nhà.
+Nam đến thư viện
+Lan đến thư viện.
+Nam đến trường.
+Lan đến trường.
+Lan thường đến nhà của Lan.
+Nam thường đến nhà của Nam.
+Lan thường đến trường của Lan.
+Nam thường đến trường của Nam.
+Lan thường đến thư viện của Lan.
+Nam thường đến thư viện của Nam.
+Lan thích đến nhà của Lan.
+Nam thích đến nhà của Nam.
+Lan thích đến trường của Nam.
+Nam thích đến trường của Lan.
+Lan thích đến thư viện của Nam.
+Nam thích đến thư viện của Lan.
+Lan mới đến nhà của Lan.
+Nam mới đến nhà của Nam.
+Lan mới đến trường của Nam.
+Nam mới đến trường của Lan.
+Lan mới đến thư viện của Nam.
+Nam mới đến thư viện của Lan.
+Nam thích đến thư viện.
+Lan thích đến thư viện.
+Nam thích đến trường.
+Lan thích đến trường.
+Nam thích đến nhà.
+Lan thích đến nhà.
+Nam rất thích đọc sách ở thư viện.
+Nam rất thích đọc sách ở trường.
+Nam rất thích mua sách ở thư viện.
+Lan rất thích đọc sách ở thư viện.
+Lan rất thích đọc sách ở trường.
+Nam rất thích đọc sách.
+Lan rất thích đọc sách.
+Nam thích đọc sách.
+Lan thích đọc sách.
+Nam thích sách.
+Lan thích sách.
+Nam đọc sách.
+Lan đọc sách.
+Nam mua sách.
+Lan mua sách.
+Nam thích đọc sách ở thư viện.
+Lan thích đọc sách ở thư viện. 
+Nam thích đọc sách ở trường.
+Lan thích đọc sách ở trường. 
+Nhà của Nam ở gần trường.
+Nhà của Nam ở gần thư viện.
+Nhà của Lan ở gần trường.
+Nhà của Lan ở gần thư viện.
+Trường của Nam ở gần nhà.
+Trường của Lan ở gần nhà.
+Trường của Nam ở gần thư viện.
+Trường của Lan ở gần thư viện.
+Thư viện của Nam ở gần nhà .
+Thư viện của Lan ở gần nhà .
+Thư viện của Nam ở gần trường .
+Thư viện của Lan ở gần trường.
+Trường của Nam ở gần nhà của Lan.
+Trường của Lan ở gần nhà của Nam.
+Thư viện của Nam ở gần nhà của Lan.
+Thư viện của Lan ở gần nhà của Nam.
+Nhà của Nam ở gần nhà của Lan.
+Nhà của Lan ở gần nhà của Nam.
+Nam mới mua mấy cuốn sách mới.
+Lan mới mua mấy cuốn sách mới.
+Nam mới mua mấy cuốn sách rất hay.
+Lan mới mua mấy cuốn sách rất hay.
+Trường mới mua mấy cuốn sách mới.
+Thư viện mới mua mấy cuốn sách mới.
+Trường mới mua mấy cuốn sách rất hay.
+Thư viện mới mua mấy cuốn sách rất hay.
+Nam mới mua sách.
+Lan mới mua sách.
+Trường mới mua sách.
+Thư viện mới mua sách.
+Nam tặng Lan một cuốn sách rất hay.
+Nam tặng Lan mấy cuốn sách rất hay.
+Lan tặng Nam một cuốn sách rất hay.
+Lan tặng Nam mấy cuốn sách rất hay.
+Nam tặng Lan một cuốn sách mới.
+Lan tặng Nam một cuốn sách mới.
+Nam tặng Lan mấy cuốn sách mới.
+Lan tặng Nam mấy cuốn sách mới.
+Trường tặng Nam một cuốn sách rất hay.
+Thư viện tặng Nam một cuốn sách rất hay.
+Thư viện tặng Nam mấy cuốn sách rất hay.
+Trường tặng Nam mấy cuốn sách rất hay.
+Thư viện tặng Lan một cuốn sách rất hay.
+Trường tặng Lan một cuốn sách rất hay.
+Thư viện tặng Lan mấy cuốn sách rất hay.
+Trường tặng Lan mấy cuốn sách rất hay.
+Trường tặng Nam một cuốn sách mới.
+Thư viện tặng Nam một cuốn sách mới.
+Trường tặng Nam mấy cuốn sách mới.
+Thư viện tặng Nam mấy cuốn sách mới.
+Trường tặng Lan một cuốn sách mới.
+Thư viện tặng Lan một cuốn sách mới.
+Trường tặng Lan mấy cuốn sách mới.
+Thư viện tặng Lan mấy cuốn sách mới.
+Nam tặng trường một cuốn sách mới.
+Lam tặng thư viện một cuốn sách mới.
+Nam tặng trường mấy cuốn sách mới.
+Lan tặng thư viện mấy cuốn sách mới.
+Nam tặng trường một cuốn sách rất hay.
+Lam tặng thư viện một cuốn sách rất hay.
+Nam tặng trường mấy cuốn sách rất hay.
+Lan tặng thư viện mấy cuốn sách rất hay.
