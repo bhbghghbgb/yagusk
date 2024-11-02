@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .grid-container {
+                display: grid;
+                margin: 0 90px;
+                grid-template-areas: "header header header" "left center right" "footer footer footer";
+                grid-template-columns: min-content auto min-content;
+                grid-template-rows: min-content auto min-content;
+                align-items: center;
+            }
+            .center {
+                font-size: 48px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="center" style="grid-area: header">Header</div>
+            <div class="center" style="grid-area: left">Left</div>
+            <div class="center" style="grid-area: center">Center</div>
+            <div class="center" style="grid-area: right">Right</div>
+            <div class="center" style="grid-area: footer">Footer</div>
+        </div>
+    </body>
+</html>
