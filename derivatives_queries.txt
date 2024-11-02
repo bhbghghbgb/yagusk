@@ -107,10 +107,10 @@ s(Tree,[thu-vien, tang, lan, mot, cuon-sach, moi],[]).
 s(Tree,[truong, tang, lan, may, cuon-sach, moi],[]).
 s(Tree,[thu-vien, tang, lan, may, cuon-sach, moi],[]).
 s(Tree,[nam, tang, truong, mot, cuon-sach, moi],[]).
-s(Tree,[lam, tang, thu-vien, mot, cuon-sach, moi],[]).
+s(Tree,[lan, tang, thu-vien, mot, cuon-sach, moi],[]).
 s(Tree,[nam, tang, truong, may, cuon-sach, moi],[]).
 s(Tree,[lan, tang, thu-vien, may, cuon-sach, moi],[]).
 s(Tree,[nam, tang, truong, mot, cuon-sach, rat, hay],[]).
-s(Tree,[lam, tang, thu-vien, mot, cuon-sach, rat, hay],[]).
+s(Tree,[lan, tang, thu-vien, mot, cuon-sach, rat, hay],[]).
 s(Tree,[nam, tang, truong, may, cuon-sach, rat, hay],[]).
 s(Tree,[lan, tang, thu-vien, may, cuon-sach, rat, hay],[]).
