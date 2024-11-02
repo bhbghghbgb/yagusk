@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 unidecode = "*"
+undetected-chromedriver = "*"
+setuptools = "*"
+helium = "*"
+tqdm = "*"
 
 [dev-packages]
 
