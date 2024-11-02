@@ -4,7 +4,7 @@ from unidecode import unidecode
 
 filein = Path("derivatives.txt")
 fileout = filein.with_stem(f"{filein.stem}_queries")
-wordlinks = {"thu vien": "thu-vien", "cua hang": "cua-hang"}
+wordlinks = {"thu vien": "thu-vien", "cuon sach": "cuon-sach"}
 
 
 text = filein.read_text("utf-8")
@@ -18,7 +18,7 @@ lowercased_text = nodots_text.lower()
 print(lowercased_text)
 wordlinked_text = lowercased_text
 for word, hyphenated_word in wordlinks.items():
-    wordlinked_text.replace(word, hyphenated_word)
+    wordlinked_text = wordlinked_text.replace(word, hyphenated_word)
 print(wordlinked_text)
 lines = wordlinked_text.split("\n")
 print(lines)

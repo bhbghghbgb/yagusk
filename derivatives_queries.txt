@@ -1,42 +1,42 @@
 s(Tree,[nam, thuong, den, truong],[]).
-s(Tree,[lan, thuong, den, thu, vien],[]).
+s(Tree,[lan, thuong, den, thu-vien],[]).
 s(Tree,[lan, thuong, den, truong],[]).
 s(Tree,[lan, thuong, den, nha],[]).
 s(Tree,[nam, thuong, den, nha],[]).
 s(Tree,[nam, den, nha],[]).
 s(Tree,[lan, den, nha],[]).
-s(Tree,[nam, den, thu, vien],[]).
-s(Tree,[lan, den, thu, vien],[]).
+s(Tree,[nam, den, thu-vien],[]).
+s(Tree,[lan, den, thu-vien],[]).
 s(Tree,[nam, den, truong],[]).
 s(Tree,[lan, den, truong],[]).
 s(Tree,[lan, thuong, den, nha, cua, lan],[]).
 s(Tree,[nam, thuong, den, nha, cua, nam],[]).
 s(Tree,[lan, thuong, den, truong, cua, lan],[]).
 s(Tree,[nam, thuong, den, truong, cua, nam],[]).
-s(Tree,[lan, thuong, den, thu, vien, cua, lan],[]).
-s(Tree,[nam, thuong, den, thu, vien, cua, nam],[]).
+s(Tree,[lan, thuong, den, thu-vien, cua, lan],[]).
+s(Tree,[nam, thuong, den, thu-vien, cua, nam],[]).
 s(Tree,[lan, thich, den, nha, cua, lan],[]).
 s(Tree,[nam, thich, den, nha, cua, nam],[]).
 s(Tree,[lan, thich, den, truong, cua, nam],[]).
 s(Tree,[nam, thich, den, truong, cua, lan],[]).
-s(Tree,[lan, thich, den, thu, vien, cua, nam],[]).
-s(Tree,[nam, thich, den, thu, vien, cua, lan],[]).
+s(Tree,[lan, thich, den, thu-vien, cua, nam],[]).
+s(Tree,[nam, thich, den, thu-vien, cua, lan],[]).
 s(Tree,[lan, moi, den, nha, cua, lan],[]).
 s(Tree,[nam, moi, den, nha, cua, nam],[]).
 s(Tree,[lan, moi, den, truong, cua, nam],[]).
 s(Tree,[nam, moi, den, truong, cua, lan],[]).
-s(Tree,[lan, moi, den, thu, vien, cua, nam],[]).
-s(Tree,[nam, moi, den, thu, vien, cua, lan],[]).
-s(Tree,[nam, thich, den, thu, vien],[]).
-s(Tree,[lan, thich, den, thu, vien],[]).
+s(Tree,[lan, moi, den, thu-vien, cua, nam],[]).
+s(Tree,[nam, moi, den, thu-vien, cua, lan],[]).
+s(Tree,[nam, thich, den, thu-vien],[]).
+s(Tree,[lan, thich, den, thu-vien],[]).
 s(Tree,[nam, thich, den, truong],[]).
 s(Tree,[lan, thich, den, truong],[]).
 s(Tree,[nam, thich, den, nha],[]).
 s(Tree,[lan, thich, den, nha],[]).
-s(Tree,[nam, rat, thich, doc, sach, o, thu, vien],[]).
+s(Tree,[nam, rat, thich, doc, sach, o, thu-vien],[]).
 s(Tree,[nam, rat, thich, doc, sach, o, truong],[]).
-s(Tree,[nam, rat, thich, mua, sach, o, thu, vien],[]).
-s(Tree,[lan, rat, thich, doc, sach, o, thu, vien],[]).
+s(Tree,[nam, rat, thich, mua, sach, o, thu-vien],[]).
+s(Tree,[lan, rat, thich, doc, sach, o, thu-vien],[]).
 s(Tree,[lan, rat, thich, doc, sach, o, truong],[]).
 s(Tree,[nam, rat, thich, doc, sach],[]).
 s(Tree,[lan, rat, thich, doc, sach],[]).
@@ -48,69 +48,69 @@ s(Tree,[nam, doc, sach],[]).
 s(Tree,[lan, doc, sach],[]).
 s(Tree,[nam, mua, sach],[]).
 s(Tree,[lan, mua, sach],[]).
-s(Tree,[nam, thich, doc, sach, o, thu, vien],[]).
-s(Tree,[lan, thich, doc, sach, o, thu, vien],[]).
+s(Tree,[nam, thich, doc, sach, o, thu-vien],[]).
+s(Tree,[lan, thich, doc, sach, o, thu-vien],[]).
 s(Tree,[nam, thich, doc, sach, o, truong],[]).
 s(Tree,[lan, thich, doc, sach, o, truong],[]).
 s(Tree,[nha, cua, nam, o, gan, truong],[]).
-s(Tree,[nha, cua, nam, o, gan, thu, vien],[]).
+s(Tree,[nha, cua, nam, o, gan, thu-vien],[]).
 s(Tree,[nha, cua, lan, o, gan, truong],[]).
-s(Tree,[nha, cua, lan, o, gan, thu, vien],[]).
+s(Tree,[nha, cua, lan, o, gan, thu-vien],[]).
 s(Tree,[truong, cua, nam, o, gan, nha],[]).
 s(Tree,[truong, cua, lan, o, gan, nha],[]).
-s(Tree,[truong, cua, nam, o, gan, thu, vien],[]).
-s(Tree,[truong, cua, lan, o, gan, thu, vien],[]).
-s(Tree,[thu, vien, cua, nam, o, gan, nha],[]).
-s(Tree,[thu, vien, cua, lan, o, gan, nha],[]).
-s(Tree,[thu, vien, cua, nam, o, gan, truong],[]).
-s(Tree,[thu, vien, cua, lan, o, gan, truong],[]).
+s(Tree,[truong, cua, nam, o, gan, thu-vien],[]).
+s(Tree,[truong, cua, lan, o, gan, thu-vien],[]).
+s(Tree,[thu-vien, cua, nam, o, gan, nha],[]).
+s(Tree,[thu-vien, cua, lan, o, gan, nha],[]).
+s(Tree,[thu-vien, cua, nam, o, gan, truong],[]).
+s(Tree,[thu-vien, cua, lan, o, gan, truong],[]).
 s(Tree,[truong, cua, nam, o, gan, nha, cua, lan],[]).
 s(Tree,[truong, cua, lan, o, gan, nha, cua, nam],[]).
-s(Tree,[thu, vien, cua, nam, o, gan, nha, cua, lan],[]).
-s(Tree,[thu, vien, cua, lan, o, gan, nha, cua, nam],[]).
+s(Tree,[thu-vien, cua, nam, o, gan, nha, cua, lan],[]).
+s(Tree,[thu-vien, cua, lan, o, gan, nha, cua, nam],[]).
 s(Tree,[nha, cua, nam, o, gan, nha, cua, lan],[]).
 s(Tree,[nha, cua, lan, o, gan, nha, cua, nam],[]).
-s(Tree,[nam, moi, mua, may, cuon, sach, moi],[]).
-s(Tree,[lan, moi, mua, may, cuon, sach, moi],[]).
-s(Tree,[nam, moi, mua, may, cuon, sach, rat, hay],[]).
-s(Tree,[lan, moi, mua, may, cuon, sach, rat, hay],[]).
-s(Tree,[truong, moi, mua, may, cuon, sach, moi],[]).
-s(Tree,[thu, vien, moi, mua, may, cuon, sach, moi],[]).
-s(Tree,[truong, moi, mua, may, cuon, sach, rat, hay],[]).
-s(Tree,[thu, vien, moi, mua, may, cuon, sach, rat, hay],[]).
+s(Tree,[nam, moi, mua, may, cuon-sach, moi],[]).
+s(Tree,[lan, moi, mua, may, cuon-sach, moi],[]).
+s(Tree,[nam, moi, mua, may, cuon-sach, rat, hay],[]).
+s(Tree,[lan, moi, mua, may, cuon-sach, rat, hay],[]).
+s(Tree,[truong, moi, mua, may, cuon-sach, moi],[]).
+s(Tree,[thu-vien, moi, mua, may, cuon-sach, moi],[]).
+s(Tree,[truong, moi, mua, may, cuon-sach, rat, hay],[]).
+s(Tree,[thu-vien, moi, mua, may, cuon-sach, rat, hay],[]).
 s(Tree,[nam, moi, mua, sach],[]).
 s(Tree,[lan, moi, mua, sach],[]).
 s(Tree,[truong, moi, mua, sach],[]).
-s(Tree,[thu, vien, moi, mua, sach],[]).
-s(Tree,[nam, tang, lan, mot, cuon, sach, rat, hay],[]).
-s(Tree,[nam, tang, lan, may, cuon, sach, rat, hay],[]).
-s(Tree,[lan, tang, nam, mot, cuon, sach, rat, hay],[]).
-s(Tree,[lan, tang, nam, may, cuon, sach, rat, hay],[]).
-s(Tree,[nam, tang, lan, mot, cuon, sach, moi],[]).
-s(Tree,[lan, tang, nam, mot, cuon, sach, moi],[]).
-s(Tree,[nam, tang, lan, may, cuon, sach, moi],[]).
-s(Tree,[lan, tang, nam, may, cuon, sach, moi],[]).
-s(Tree,[truong, tang, nam, mot, cuon, sach, rat, hay],[]).
-s(Tree,[thu, vien, tang, nam, mot, cuon, sach, rat, hay],[]).
-s(Tree,[thu, vien, tang, nam, may, cuon, sach, rat, hay],[]).
-s(Tree,[truong, tang, nam, may, cuon, sach, rat, hay],[]).
-s(Tree,[thu, vien, tang, lan, mot, cuon, sach, rat, hay],[]).
-s(Tree,[truong, tang, lan, mot, cuon, sach, rat, hay],[]).
-s(Tree,[thu, vien, tang, lan, may, cuon, sach, rat, hay],[]).
-s(Tree,[truong, tang, lan, may, cuon, sach, rat, hay],[]).
-s(Tree,[truong, tang, nam, mot, cuon, sach, moi],[]).
-s(Tree,[thu, vien, tang, nam, mot, cuon, sach, moi],[]).
-s(Tree,[truong, tang, nam, may, cuon, sach, moi],[]).
-s(Tree,[thu, vien, tang, nam, may, cuon, sach, moi],[]).
-s(Tree,[truong, tang, lan, mot, cuon, sach, moi],[]).
-s(Tree,[thu, vien, tang, lan, mot, cuon, sach, moi],[]).
-s(Tree,[truong, tang, lan, may, cuon, sach, moi],[]).
-s(Tree,[thu, vien, tang, lan, may, cuon, sach, moi],[]).
-s(Tree,[nam, tang, truong, mot, cuon, sach, moi],[]).
-s(Tree,[lam, tang, thu, vien, mot, cuon, sach, moi],[]).
-s(Tree,[nam, tang, truong, may, cuon, sach, moi],[]).
-s(Tree,[lan, tang, thu, vien, may, cuon, sach, moi],[]).
-s(Tree,[nam, tang, truong, mot, cuon, sach, rat, hay],[]).
-s(Tree,[lam, tang, thu, vien, mot, cuon, sach, rat, hay],[]).
-s(Tree,[nam, tang, truong, may, cuon, sach, rat, hay],[]).
-s(Tree,[lan, tang, thu, vien, may, cuon, sach, rat, hay],[]).
+s(Tree,[thu-vien, moi, mua, sach],[]).
+s(Tree,[nam, tang, lan, mot, cuon-sach, rat, hay],[]).
+s(Tree,[nam, tang, lan, may, cuon-sach, rat, hay],[]).
+s(Tree,[lan, tang, nam, mot, cuon-sach, rat, hay],[]).
+s(Tree,[lan, tang, nam, may, cuon-sach, rat, hay],[]).
+s(Tree,[nam, tang, lan, mot, cuon-sach, moi],[]).
+s(Tree,[lan, tang, nam, mot, cuon-sach, moi],[]).
+s(Tree,[nam, tang, lan, may, cuon-sach, moi],[]).
+s(Tree,[lan, tang, nam, may, cuon-sach, moi],[]).
+s(Tree,[truong, tang, nam, mot, cuon-sach, rat, hay],[]).
+s(Tree,[thu-vien, tang, nam, mot, cuon-sach, rat, hay],[]).
+s(Tree,[thu-vien, tang, nam, may, cuon-sach, rat, hay],[]).
+s(Tree,[truong, tang, nam, may, cuon-sach, rat, hay],[]).
+s(Tree,[thu-vien, tang, lan, mot, cuon-sach, rat, hay],[]).
+s(Tree,[truong, tang, lan, mot, cuon-sach, rat, hay],[]).
+s(Tree,[thu-vien, tang, lan, may, cuon-sach, rat, hay],[]).
+s(Tree,[truong, tang, lan, may, cuon-sach, rat, hay],[]).
+s(Tree,[truong, tang, nam, mot, cuon-sach, moi],[]).
+s(Tree,[thu-vien, tang, nam, mot, cuon-sach, moi],[]).
+s(Tree,[truong, tang, nam, may, cuon-sach, moi],[]).
+s(Tree,[thu-vien, tang, nam, may, cuon-sach, moi],[]).
+s(Tree,[truong, tang, lan, mot, cuon-sach, moi],[]).
+s(Tree,[thu-vien, tang, lan, mot, cuon-sach, moi],[]).
+s(Tree,[truong, tang, lan, may, cuon-sach, moi],[]).
+s(Tree,[thu-vien, tang, lan, may, cuon-sach, moi],[]).
+s(Tree,[nam, tang, truong, mot, cuon-sach, moi],[]).
+s(Tree,[lam, tang, thu-vien, mot, cuon-sach, moi],[]).
+s(Tree,[nam, tang, truong, may, cuon-sach, moi],[]).
+s(Tree,[lan, tang, thu-vien, may, cuon-sach, moi],[]).
+s(Tree,[nam, tang, truong, mot, cuon-sach, rat, hay],[]).
+s(Tree,[lam, tang, thu-vien, mot, cuon-sach, rat, hay],[]).
+s(Tree,[nam, tang, truong, may, cuon-sach, rat, hay],[]).
+s(Tree,[lan, tang, thu-vien, may, cuon-sach, rat, hay],[]).
