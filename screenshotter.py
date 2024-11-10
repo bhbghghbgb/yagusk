@@ -1,5 +1,6 @@
 from datetime import datetime as dt
 from pathlib import Path as P
+from traceback import print_exc as pe
 
 import helium as hl
 import undetected_chromedriver as uc
@@ -73,5 +74,7 @@ try:
         t.write(f"Element {count} OK")
 except Exception as e:
     driver.save_screenshot(P(f"./output/error_{dt.now()}.png"))
+    pe()
     print(e)
+finally:
     input("To exit ...")
